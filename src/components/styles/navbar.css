@@ -1,0 +1,25 @@
+.body{
+    background-color: #212529;
+}
+.navbar{
+    color: lightblue;
+}
+.image{
+    width: 35px;
+    height: 35px;
+    
+}
+.logo{
+    width:130px;
+  
+}
+.container{
+   
+}
+.form-control{
+    width: 70%;
+}
+.d-flex{
+    padding-left: 25px;
+    padding-bottom: 15px;
+}
