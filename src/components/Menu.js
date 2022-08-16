@@ -22,9 +22,9 @@ function Menu() {
           navbarScroll
         >
           <Nav.Link href="#action1" variant="light">Home</Nav.Link>
-          <Nav.Link href="#action2">Link</Nav.Link>
+         
         
-        
+          <img src={carrito} alt="" className='image'/>
         </Nav> 
         <Form className="d-flex " >
           <FormControl
@@ -35,7 +35,7 @@ function Menu() {
           />
           <Button variant="outline-warning">Search</Button>
         </Form>
-        <img src={carrito} alt="" className='image'/>
+       
       </Navbar.Collapse>
 
   </Navbar>
