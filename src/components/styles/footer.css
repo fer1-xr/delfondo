@@ -1,11 +1,20 @@
 .logo1{
-    margin-top: 55px;
-    margin-left: 115px;
+  margin-left: 105px;
+
 }
-.my{
+.my-3{
     margin-top: 25px;
+    margin-left: 40px;
+   
 }
-.shadow{
-    background-color: #212529;
-    color: white;
+.mt-4{
+  margin-left: 85px;
+  
+}
+*{
+  text-decoration: none;
+}
+.h5{
+  color: #ffca2c;
+  margin-top: 15px;
 }
