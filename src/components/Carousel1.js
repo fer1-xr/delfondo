@@ -3,41 +3,63 @@ import carousel from "./img/carousel.jpg"
 import carousel1 from "./img/carousel1.jpg"
 import carousel2 from "./img/carousel2.jpg"
 import "./styles/Carousel.css"
-function Carousel1() {
+import Container from 'react-bootstrap/Container';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+
+
+// import required modules
+import { Keyboard, Pagination, Navigation } from "swiper";
+
+export default function App() {
   return (
-    <Carousel className='caro'>
-      <Carousel.Item interval={1000}>
-        <img
-          className="d-block w-100"
+    <>
+    <Container>
+    <div className='caro'>
+      <Swiper
+        slidesPerView={2}
+        spaceBetween={320}
+        keyboard={{
+          enabled: true,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Keyboard, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide><img
+          className='car1'
           src={carousel}
           alt="First slide"
-        />
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <img
-          className="d-block w-100"
+        /></SwiperSlide>
+        <SwiperSlide><img
+          className='car1'
           src={carousel1}
-          alt="Second slide"
-        />
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
+          alt="First slide"
+        /></SwiperSlide>
+        <SwiperSlide><img
+          className='car1'
           src={carousel2}
-          alt="Third slide"
-        />
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+          alt="First slide"
+        /></SwiperSlide>
+       <SwiperSlide><img
+          className='car1'
+          src={carousel}
+          alt="First slide"
+        /></SwiperSlide>
+        <SwiperSlide></SwiperSlide>
+      </Swiper>
+      </div>
+      </Container>
+    </>
   );
 }
-
-export default Carousel1;

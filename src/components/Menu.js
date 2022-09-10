@@ -8,10 +8,12 @@ import logo from "./img/logo.png"
 
 function Menu() {
   return (
+
     <div className='body'>
+      <Container>
  <div className="container">
     
-    <Navbar bg="dark" expand="lg" variant="dark"  >
+    <Navbar bg="dark" expand="lg" variant="dark" fixed="top" >
  
       <Navbar.Brand href="#">  <img src={logo} alt="" className='logo'/> </Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll"  />
@@ -30,7 +32,7 @@ function Menu() {
           <FormControl
             type="search"
             placeholder="Search"
-            className="me-auto form-control"
+            className="m form-control"
             aria-label="Search"
           />
           <Button variant="outline-warning">Search</Button>
@@ -40,10 +42,12 @@ function Menu() {
 
   </Navbar>
 
-
+ 
 
   </div>
+  </Container>
   </div>
+ 
   )
 }
 

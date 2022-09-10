@@ -1,7 +1,7 @@
 import React from 'react';
 import { CDBFooter, CDBFooterLink, CDBBtn, CDBIcon, CDBContainer , CDBBox} from 'cdbreact';
 import logo from "./img/logo.png"
-
+import Container from 'react-bootstrap/Container';
 import "./styles/footer.css"
 
 
@@ -9,6 +9,7 @@ import "./styles/footer.css"
 
 export const Footer = () => {
   return (
+
     <CDBFooter className="shadow">
       <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
         <CDBBox display="flex" justifyContent="between" className="flex-wrap">
@@ -21,6 +22,7 @@ export const Footer = () => {
               We are creating High Quality Resources and tools to Aid developers during the
               developement of their projects
             </p>
+            <Container>
             <CDBBox display="flex" className="mt-4">
               <CDBBtn flat color="dark">
                 <CDBIcon fab icon="facebook-f" />
@@ -31,8 +33,11 @@ export const Footer = () => {
               <CDBBtn flat color="dark" className="p-2">
                 <CDBIcon fab icon="instagram" />
               </CDBBtn>
+           
             </CDBBox>
+            </Container>
           </CDBBox>
+
           <CDBBox>
             <p className="h5 mb-4" style={{ fontWeight: '600' }}>
               Devwares
@@ -68,6 +73,7 @@ export const Footer = () => {
         <small className="text-center mt-5">&copy; Del Punto, 2022. All rights reserved.</small>
       </CDBBox>
     </CDBFooter>
+   
   );
 };
 export default Footer

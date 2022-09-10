@@ -14,3 +14,28 @@ h2{
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 font-size: 22px;
 }
+Button{
+  width: 82px;
+  height: 40px;
+}
+/*modo vertical ipad*/
+@media screen and (min-width: 810px){
+
+  .swiper {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+/*modo horizontal ipad*/
+
+@media screen and (min-width: 1080px){
+  
+  .swiper {
+    margin-left: 50px;
+    margin-right: 50px;
+   
+  }
+  .swiper-slide{
+    width: 470px;
+  }
+}

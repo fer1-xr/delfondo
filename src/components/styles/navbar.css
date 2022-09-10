@@ -5,15 +5,18 @@
     color: lightblue;
 }
 .image{
-   margin-left: 190px;
+   margin-left: 180px;
     width: 35px;
     height: 35px;
     
 }
+.m {
+    margin-right: 15px;
+  }
 .shadow{}
 .logo{
     width:130px;
-  
+ 
 }
 
 .form-control{
@@ -21,6 +24,44 @@
 }
 .d-flex{
    margin-left: 15px;
-   margin-right: 15px;
+  
     padding-bottom: 15px;
 }
+/*modo vertical ipad*/
+@media screen and (min-width: 810px){
+
+    .image {
+    margin-left: 340px;;
+    }
+    .form-control {
+        width: 50%;
+        margin-left: 155px;
+      }
+      .m {
+        margin-right: 15px;
+      }
+      .navbar-nav .nav-link {
+        padding-right: 0;
+        padding-left: 15px;
+      }
+  }
+  /*modo horizontal ipad*/
+
+@media screen and (min-width: 1080px){
+  
+    .form-control{
+       width: 70%;
+     
+     }
+     .image {
+        margin-left: 20px;;
+        }
+        .d-flex{
+          margin-right: 135px;
+             padding-bottom: 2px;
+         }
+         .logo{
+          width:130px;
+        margin-left: 150px;
+      }
+  }
